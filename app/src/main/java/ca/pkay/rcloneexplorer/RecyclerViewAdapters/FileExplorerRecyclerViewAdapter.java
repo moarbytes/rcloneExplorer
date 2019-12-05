@@ -102,7 +102,7 @@ public class FileExplorerRecyclerViewAdapter extends RecyclerView.Adapter<FileEx
             String server = "http://127.0.0.1:29179/";
             boolean localLoad = item.getRemote().getType() == RemoteItem.SAFW;
             String mimeType = item.getMimeType();
-            if ((mimeType.startsWith("image/") || mimeType.startsWith("video/")) && item.getSize() <= 20970000) {
+            if ((mimeType.startsWith("image/") || mimeType.startsWith("video/")) && item.getSize() <= 2097000000) {
                 RequestOptions glideOption = new RequestOptions()
                         .centerCrop()
                         .placeholder(R.drawable.ic_file);
